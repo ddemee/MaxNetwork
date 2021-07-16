@@ -10,13 +10,33 @@
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
       }
-  
-
+      .hard-text {
+          width: 50%;
+      }
+      .hard-img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+      }
+      .split {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      } 
+      .product div {
+        width: 32%;
+      }
+      
  }
 
 
 @media (min-width: 992px) { 
     .rounded-lg-3 { border-radius: .3rem; }
+
+    .hard-img {
+        width: 40%;
+      }
  
 }
 
