@@ -13,6 +13,9 @@
       .hard-text {
           width: 50%;
       }
+      .hard-text h5 {
+          font-size: 3rem;
+      }
       .hard-img {
         position: absolute;
         right: 0;
