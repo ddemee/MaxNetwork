@@ -1,6 +1,9 @@
 
 @media (min-width: 576px) { 
+  .service h2 {
 
+    font-size: 1.3rem;
+  }
 
     
  }
@@ -30,6 +33,10 @@
       .product-div {
         width: 32%;
       }
+      .service div {
+        width: 20%;
+      }
+  
       
  }
 
