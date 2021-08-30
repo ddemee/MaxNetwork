@@ -29,6 +29,14 @@ header {
   color: white;
   font-size: 1.2rem;
 }
+/*  */
+.notyet {
+  margin: 0 15px;
+  padding: 5px;
+  font-size: 1.5rem;  
+  color: red;
+  text-align: right;
+}
 /* HERO */
 .hero-bg {
   background-image: url(../img/header.jpg);
@@ -207,4 +215,37 @@ footer {
   color: black;
   text-transform:capitalize;
   padding: 0 5px;
+}
+
+/* ---------- */
+.network-bg {
+  background-image: url(../img/cabels1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px 0;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.cucu {background-color: white;}
+/* -- */
+.network ,.network ul {
+  padding: 30px 15px;
+}
+.network li {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #212529;
+  list-style-type: square;
+  list-style: inside;
+}
+/* Program */
+.program-bg {
+  background-image: url(../img/cabels2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px 0;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
