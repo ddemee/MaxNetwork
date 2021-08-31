@@ -20,6 +20,7 @@ p {
 section {
   padding: 50px 0;
 }
+
 /* header */
 header {
   background-color: #212529;
@@ -37,6 +38,43 @@ header {
   color: red;
   text-align: right;
 }
+/* HEADER  */
+.dropbtn {
+  padding: .5rem 1rem;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  background-color: transparent;
+  
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #213242;
+  min-width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding:10px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #9BAEC2;border-radius: 5px;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #213242;}
 /* HERO */
 .hero-bg {
   background-image: url(../img/header.jpg);
@@ -46,10 +84,6 @@ header {
   color: white;
   
 }
-
-
-
-
 /*  */
 .service {
   display: flex;
@@ -218,34 +252,42 @@ footer {
 }
 
 /* ---------- */
-.network-bg {
-  background-image: url(../img/cabels1.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 300px 0;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-}
-.cucu {background-color: white;}
 /* -- */
 .network ,.network ul {
   padding: 30px 15px;
 }
+.network h2 {
+  font-size: 2rem;
+}
 .network li {
   margin: 15px 0;
-  font-size: 1.2rem;
   color: #212529;
   list-style-type: square;
   list-style: inside;
+  line-height: 1.2;
 }
 /* Program */
-.program-bg {
-  background-image: url(../img/cabels2.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 300px 0;
+
+.service-img {
+  width: 100%;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
+/*  */
+.camera {
+  margin-top: 50px;
+
+  padding: 100px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.camera-img {
+  width: 30%;
+}
+
+
+
+
+/*  */
