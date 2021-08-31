@@ -31,12 +31,24 @@ header {
   font-size: 1.2rem;
 }
 /*  */
+.fixed {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  z-index: 5;
+}
 .notyet {
   margin: 0 15px;
   padding: 5px;
   font-size: 1.5rem;  
   color: red;
   text-align: right;
+  animation: neon 2s infinite;
+}
+@keyframes neon {
+  100% {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 2px 2px 2px rgba(206,89,55,0);
+  }
 }
 /* HEADER  */
 .dropbtn {
@@ -252,7 +264,27 @@ footer {
 }
 
 /* ---------- */
+.left-side {
+  max-width: 270px;
+  width: 100%;
+}
+.left-side li {
+  padding: 10px 20px;
+  border-bottom: solid 1px black;
+  border-radius: 5px;
+  
+}
+.left-side a {
+  color: #000;
+}
+.left-side li:hover{
+  background-color: #9BAEC2;
+}
 /* -- */
+.network {
+  max-width: 850px;
+  width: 100%;
+}
 .network ,.network ul {
   padding: 30px 15px;
 }
