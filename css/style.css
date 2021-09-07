@@ -189,10 +189,8 @@ header {
 
 
 
-/* ------- */
-.hardware {
-  padding: 50px 0 250px 50px ;
-}
+/* HARDWARE */
+
 .hard-img img {
   width: 100%;
 }
@@ -227,6 +225,7 @@ header {
   border-radius: 0.5rem;
   overflow: hidden;
   transition: transform 500ms ease;
+  margin: 1rem 0;
 }
 .product-text {
   color: #fff;
@@ -300,7 +299,10 @@ header {
     transition: transform 400ms ease;
   }
 }
-
+/* FRAME  */
+.frame {
+  margin: 0;
+}
 /* Footer */
 footer {
   background-color: #212529;

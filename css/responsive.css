@@ -27,7 +27,10 @@
     } 
     .service div {
       width: 20%;
-    }   
+    }  
+    .hardware {
+      padding: 100px 0 150px 50px ;
+    } 
 }
 @media (min-width: 992px) { 
   .rounded-lg-3 { 
@@ -37,8 +40,6 @@
     width: 40%;
   }    
 }
-
-
 @media (min-width: 1200px) { 
 
 }
