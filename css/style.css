@@ -228,10 +228,6 @@ header {
   overflow: hidden;
   transition: transform 500ms ease;
 }
-.product-text > *:not(.product-text h4){
-  opacity: 0;
-  transition:  opacity 400ms ease
-}
 .product-text {
   color: #fff;
   --padding:1.5rem;
@@ -239,15 +235,11 @@ header {
   padding: var(--padding);
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,0.2805497198879552) 100%);
-  transform: translateY(65%);
-  transition: transform 500ms ease;
-  transition-delay: 400ms;
 }
 .product-text h4 {
   font-size: 1.5em;
   position: relative;
   width: max-content;
-
 }
 .product-text h4::after {
   content: "";
@@ -257,15 +249,21 @@ header {
   height: 4px;
   width: calc(100% + var(--padding));
   background-color: #13ffd8!important;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 400ms ease;
 }
 .product-text p {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.842);
 }
-@media (hover){
+@media (hover:hover) {
+  .product-text {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+    transition-delay: 400ms;
+  }
+  .product-text > *:not(.product-text h4){
+    opacity: 0;
+    transition:  opacity 400ms ease
+  }
   .product-div:hover,
   .product-div:focus{
     transform: scale(1.025);
@@ -287,9 +285,6 @@ header {
   .product-div:focus-within .product-text {
   transition-duration: 0ms;
   }
-
-
-
   .product-div:hover .product-text h4::after,
   .product-div:focus-within .product-text h4::after {
     transform: scaleX(1)
@@ -298,6 +293,11 @@ header {
   .product-div:hover .product-text {
     transform: translateY(0);
     transition-delay: 400ms;
+  }
+  .product-text h4::after {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms ease;
   }
 }
 
