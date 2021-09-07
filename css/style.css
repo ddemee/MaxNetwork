@@ -1,4 +1,7 @@
 /* Defaults  */
+body {
+  font-family:sans-serif;
+}
 h1 {
   margin: 20px 0;
 }
@@ -194,57 +197,108 @@ header {
   width: 100%;
 }
 
-/*  */
-.product-div {
-  width: 95%;
-  background-color: gray;
-  height: 10rem;
-  text-align: center;
-  padding: 150px 0 ;
-  color: white;
-  border-radius: 15px;
-  transition: all ease 1s;
-}
-.product-div:hover .product-text{
- display: block;
- transition: all ease 1s;
- cursor: pointer;
-}
-
+/* PRODUCTS  */
 .bg1 {
-  background-image: url(../img/fortinet.jpg);
+  background-image: url(../img/product/fortinet.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 .bg2 {
-  background-image: url(../img/cisco1.jpg);
+  background-image: url(../img/product/cisco1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 .bg3 {
-  background-image: url(../img/ARUBAjpg.jpg);
+  background-image: url(../img/product/ARUBAjpg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+}
+.product {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.product-div {
+  max-width: 35ch;
+  padding: 10rem 0 0 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+.product-text > *:not(.product-text h4){
+  opacity: 0;
+  transition:  opacity 400ms ease
 }
 .product-text {
-  background-color: #212529f6;
-  padding: 150px 0 ;
-  height: 10rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-radius: 15px;
-  display: none;
-  transition: all ease 1s;
+  color: #fff;
+  --padding:1.5rem;
+  height: 269px;
+  padding: var(--padding);
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,0.2805497198879552) 100%);
+  transform: translateY(65%);
+  transition: transform 500ms ease;
+  transition-delay: 400ms;
 }
 .product-text h4 {
-  font-size: 2rem;
+  font-size: 1.5em;
+  position: relative;
+  width: max-content;
+
+}
+.product-text h4::after {
+  content: "";
+  position: absolute;
+  left: calc(var(--padding)* -1);
+  bottom: -4px;
+  height: 4px;
+  width: calc(100% + var(--padding));
+  background-color: #13ffd8!important;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 400ms ease;
+}
+.product-text p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.842);
+}
+@media (hover){
+  .product-div:hover,
+  .product-div:focus{
+    transform: scale(1.025);
+  }
+  .product-div:hover .product-text > *:not(.product-text h4),
+  .product-div:focus-within.product-text > *:not(.product-text h4) {
+    opacity: 1;
+    transition-delay:800ms;
+  }
+  .product-div:hover .product-text h4::after {
+    transform: scaleX(1)
+
+  }
+  .product-div:hover .product-,
+  .product-div:focus-within .product-text {
+    transform: translateY(0);
+    transition-delay: 400ms;
+  }
+  .product-div:focus-within .product-text {
+  transition-duration: 0ms;
+  }
+
+
+
+  .product-div:hover .product-text h4::after,
+  .product-div:focus-within .product-text h4::after {
+    transform: scaleX(1)
+
+  }
+  .product-div:hover .product-text {
+    transform: translateY(0);
+    transition-delay: 400ms;
+  }
 }
 
 /* Footer */

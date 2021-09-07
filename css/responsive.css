@@ -29,9 +29,6 @@
         justify-content: space-between;
         align-items: flex-start;
       } 
-      .product-div {
-        width: 32%;
-      }
       .service div {
         width: 20%;
       }
